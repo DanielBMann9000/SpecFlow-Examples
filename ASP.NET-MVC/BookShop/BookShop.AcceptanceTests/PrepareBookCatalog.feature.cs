@@ -18,24 +18,20 @@ namespace BookShop.AcceptanceTests
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("US04 - Book details", new string[] {
-            "automated"}, Description="As a potential customer\nI want to see the details of a book\nSo that I can better " +
-        "decide to buy it.", SourceFile="US04_BookDetails.feature", SourceLine=1)]
-    public partial class US04_BookDetailsFeature
+    [TechTalk.SpecRun.FeatureAttribute("Prepare book catalog", Description="prepare catalog with a list of books required for manual testing", SourceFile="PrepareBookCatalog.feature", SourceLine=0)]
+    public partial class PrepareBookCatalogFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "US04_BookDetails.feature"
+#line 1 "PrepareBookCatalog.feature"
 #line hidden
         
         [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "US04 - Book details", "As a potential customer\nI want to see the details of a book\nSo that I can better " +
-                    "decide to buy it.", ProgrammingLanguage.CSharp, new string[] {
-                        "automated"});
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Prepare book catalog", "prepare catalog with a list of books required for manual testing", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,56 +62,51 @@ namespace BookShop.AcceptanceTests
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
+        [TechTalk.SpecRun.ScenarioAttribute("Setup basic example books", SourceLine=4)]
+        public virtual void SetupBasicExampleBooks()
         {
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Setup basic example books", ((string[])(null)));
+#line 5
+this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Author",
                         "Title",
                         "Price"});
             table1.AddRow(new string[] {
-                        "Martin Fowler",
-                        "Analysis Patterns",
-                        "50.20"});
-            table1.AddRow(new string[] {
-                        "Eric Evans",
-                        "Domain Driven Design",
-                        "46.34"});
-            table1.AddRow(new string[] {
-                        "Ted Pattison",
-                        "Inside Windows SharePoint Services",
-                        "31.49"});
-            table1.AddRow(new string[] {
                         "Gojko Adzic",
                         "Bridging the Communication Gap",
-                        "24.75"});
-#line 8
- testRunner.Given("the following books", ((string)(null)), table1, "Given ");
-#line hidden
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("The author, the title and the price of a book can be seen", SourceLine=14)]
-        public virtual void TheAuthorTheTitleAndThePriceOfABookCanBeSeen()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The author, the title and the price of a book can be seen", ((string[])(null)));
-#line 15
-this.ScenarioSetup(scenarioInfo);
-#line 7
-this.FeatureBackground();
-#line 16
- testRunner.When("I open the details of \'Analysis Patterns\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Author",
-                        "Title",
-                        "Price"});
-            table2.AddRow(new string[] {
+                        "12.20"});
+            table1.AddRow(new string[] {
+                        "Gojko Adzic",
+                        "Specification By Example",
+                        "15.30"});
+            table1.AddRow(new string[] {
+                        "Lisa Crispin and Janet Gregory",
+                        "Agile Testing",
+                        "20.20"});
+            table1.AddRow(new string[] {
+                        "Mitch Lacey",
+                        "The Scrum Field Guide",
+                        "15.31"});
+            table1.AddRow(new string[] {
                         "Martin Fowler",
-                        "Analysis Patterns",
-                        "50.20"});
-#line 17
- testRunner.Then("the book details should show", ((string)(null)), table2, "Then ");
+                        "Refactoring",
+                        "29.55"});
+            table1.AddRow(new string[] {
+                        "Esther Derby and Diana Larsen",
+                        "Agile Retrospectives",
+                        "16.99"});
+            table1.AddRow(new string[] {
+                        "Matt Wynne and Aslak Hellesoy",
+                        "The Cucumber Book",
+                        "18.00"});
+            table1.AddRow(new string[] {
+                        "David Chelimsky",
+                        "The RSpec Book",
+                        "17.50"});
+#line 6
+ testRunner.Given("the following books", ((string)(null)), table1, "Given ");
 #line hidden
             this.ScenarioCleanup();
         }
