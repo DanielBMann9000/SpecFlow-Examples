@@ -1,0 +1,10 @@
+﻿<Solution Format="0.0.0.3">
+  <Version>2014-10-20T14:50:13.9997578Z</Version>
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\EulerPoker54\EulerPoker54.Console\EulerPoker54.Console.csproj">
+    <Reference Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\EulerPoker54\EulerPoker54\EulerPoker54.Core.csproj" />
+  </Project>
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\EulerPoker54\EulerPoker54.Tests.Unit\EulerPoker54.Tests.Unit.csproj">
+    <Reference Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\EulerPoker54\EulerPoker54\EulerPoker54.Core.csproj" />
+  </Project>
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\EulerPoker54\EulerPoker54\EulerPoker54.Core.csproj" />
+</Solution>
